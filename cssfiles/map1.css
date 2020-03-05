@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+  }
+  
+
+body{
+    display: flex;
+    min-height: 100vh;
+}
+.leftNavigation{
+    width: 250px;
+    text-align: center;
+    background-color: #FFFFCC;
+    color: #fff;
+}
+.content{
+    flex: 1;
+    background-color: #eee;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.review{
+    
+}
+
+
+#output_message {
+    background-color: #eee;
+    color: #000000;
+}
+
+#mapid{
+    
+}

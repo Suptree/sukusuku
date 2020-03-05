@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>すくすくベイビー</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+<script src="https://api.mapbox.com/mapbox-gl-js/v1.7.0/mapbox-gl.js"></script>
+<link href="https://api.mapbox.com/mapbox-gl-js/v1.7.0/mapbox-gl.css" rel="stylesheet" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<!-- cssとリンク付け -->
+<link href="index.css" rel="stylesheet" >
+
+</head>
+<body>
+	<style>
+		#marker {
+		background-image: url('https://t-yukami.github.io/egmapjs/icon/Slide1.jpg');
+		background-size: cover;
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		cursor: pointer;
+		}
+
+		.mapboxgl-popup {
+		max-width: 200px;
+		}
+		#marker1 {
+				background-image: url('https://t-yukami.github.io/egmapjs/icon/Slide1.jpg');
+				background-size: cover;
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				cursor: pointer;
+			}
+			.mapboxgl-popup {
+				max-width: 200px;
+			}
+			#marker2 {
+				background-image: url('https://t-yukami.github.io/egmapjs/icon/Slide2.jpg');
+				background-size: cover;
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				cursor: pointer;
+			}
+			.mapboxgl-popup {
+				max-width: 200px;
+			}
+			#marker3 {
+				background-image: url('https://t-yukami.github.io/egmapjs/icon/Slide3.jpg');
+				background-size: cover;
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				cursor: pointer;
+			}
+			.mapboxgl-popup {
+				max-width: 200px;
+			}
+			#marker4 {
+				background-image: url('https://t-yukami.github.io/egmapjs/icon/Slide4.jpg');
+				background-size: cover;
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				cursor: pointer;
+			}
+			.mapboxgl-popup {
+				max-width: 200px;
+			}
+			#marker5 {
+				background-image: url('https://t-yukami.github.io/egmapjs/icon/Slide5.jpg');
+				background-size: cover;
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				cursor: pointer;
+			}
+			.mapboxgl-popup {
+				max-width: 200px;
+			}
+			#marker6 {
+				background-image: url('https://t-yukami.github.io/egmapjs/icon/Slide6.jpg');
+				background-size: cover;
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				cursor: pointer;
+			}
+			.mapboxgl-popup {
+				max-width: 200px;
+			}
+			#marker7 {
+				background-image: url('https://t-yukami.github.io/egmapjs/icon/Slide7.jpg');
+				background-size: cover;
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				cursor: pointer;
+			}
+			.mapboxgl-popup {
+				max-width: 200px;
+			}
+			#marker8 {
+				background-image: url('https://t-yukami.github.io/egmapjs/icon/Slide8.jpg');
+				background-size: cover;
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				cursor: pointer;
+			}
+			.mapboxgl-popup {
+				max-width: 200px;
+			}
+			#marker9 {
+				background-image: url('https://t-yukami.github.io/egmapjs/icon/Slide9.jpg');
+				background-size: cover;
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				cursor: pointer;
+			}
+			.mapboxgl-popup {
+				max-width: 200px;
+			}
+			#marker10 {
+				background-image: url('https://t-yukami.github.io/egmapjs/icon/Slide10.jpg');
+				background-size: cover;
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				cursor: pointer;
+			}
+			.mapboxgl-popup {
+				max-width: 200px;
+			}
+			#marker11 {
+				background-image: url('https://t-yukami.github.io/egmapjs/icon/Slide11.jpg');
+				background-size: cover;
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				cursor: pointer;
+			}
+			.mapboxgl-popup {
+				max-width: 200px;
+			}
+			#marker12 {
+				background-image: url('https://t-yukami.github.io/egmapjs/icon/Slide12.jpg');
+				background-size: cover;
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				cursor: pointer;
+			}
+			.mapboxgl-popup {
+				max-width: 200px;
+			}
+			#marker13 {
+				background-image: url('https://t-yukami.github.io/egmapjs/icon/Slide13.jpg');
+				background-size: cover;
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				cursor: pointer;
+			}
+			.mapboxgl-popup {
+				max-width: 200px;
+			}
+			#marker14 {
+				background-image: url('https://t-yukami.github.io/egmapjs/icon/Slide14.jpg');
+				background-size: cover;
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				cursor: pointer;
+			}
+			.mapboxgl-popup {
+				max-width: 200px;
+			}
+			#marker15 {
+				background-image: url('https://t-yukami.github.io/egmapjs/icon/Slide15.jpg');
+				background-size: cover;
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				cursor: pointer;
+			}
+			.mapboxgl-popup {
+				max-width: 200px;
+			}
+
+			</style>
+
+<!------------- ここから自分のコード ----------------->
+
+<header class="leftNavigation">
+
+	<!-- 豊橋までのボタン -->
+	<a href="#" class="btn-square-so-pop", id="fit">Fit to Toyohashi</a>
+
+	<p>レビュー</p>
+
+	<!-- 評価セレクト -->
+	<select id="color3">
+  	 	<option value="素晴らしい">素晴らしい！</option>
+    	<option value="普通">普通</option>
+    	<option value="まあまあ">まあまあ…</option>
+	</select>
+
+	<pre id="info"></pre>
+
+	<div class="review">
+		<form id="form1" action="#">
+			<input type="text" id="input_message" value="">
+			<input type="button" onclick="func1()" value="コメント">
+		  </form>
+	</div>
+
+	<div id="output_message"></div>
+
+</header>
+
+<dive class="content">
+	<div id="map"></div>
+</dive>
+
+</body>
+
+<script src="js/review.js"></script>
+<script src="js/hyouzi.js"></script>
+<script src="js/script.js"></script>
+<script src="js/direct.js"></script>
+
+</html>
